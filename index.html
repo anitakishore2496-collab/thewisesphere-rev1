@@ -1,111 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Productivity Website</title>
-    <link rel="stylesheet" href="css/styles.css"> <!-- Link to external CSS file -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GetHub Desktop - Blog</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+  </style>
 </head>
-<body>
+<body class="bg-gray-50 text-gray-800">
 
-<!-- Header -->
-<header>
-    <div class="logo">
-        <h1>Your Brand</h1> <!-- Replace with your logo -->
+  <!-- Header / Navigation -->
+  <header class="bg-white shadow-md">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-indigo-600">GetHub Desktop</h1>
+      <nav class="space-x-6 text-gray-700 font-medium">
+        <a href="#" class="hover:text-indigo-600 transition">Home</a>
+        <a href="#financial" class="hover:text-indigo-600 transition">Financial Thinking</a>
+        <a href="#diet" class="hover:text-indigo-600 transition">Diet Planning</a>
+        <a href="#thoughts" class="hover:text-indigo-600 transition">Good Thoughts</a>
+        <a href="#contact" class="hover:text-indigo-600 transition">Contact</a>
+      </nav>
     </div>
-    <nav>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#blog">Blog</a></li>
-            <li><a href="#shop">Shop</a></li>
-            <li><a href="#resources">Free Resources</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-    <button class="cta-btn">Get Your Free Planner</button>
-</header>
+  </header>
 
-<!-- Hero Section (Above the Fold) -->
-<section id="hero">
-    <div class="hero-text">
-        <h2>Master Your School Life with Proven Productivity Hacks</h2>
-        <p>Get study tips, time management tools, and motivation to crush your high school goals.</p>
-        <button class="cta-btn">Start Here</button>
+  <!-- Hero Section -->
+  <section class="bg-indigo-600 text-white py-24">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-4xl md:text-5xl font-bold mb-4">Inspire, Learn & Grow</h2>
+      <p class="text-lg md:text-xl mb-8">Explore insights on financial wisdom, healthy living, and mindful thinking.</p>
+      <a href="#financial" class="bg-white text-indigo-600 px-6 py-3 rounded-full font-semibold shadow hover:bg-gray-100 transition">Start Reading</a>
     </div>
-</section>
+  </section>
 
-<!-- Main Content Section (Featured Products) -->
-<section id="main-content">
-    <div class="product-grid">
-        <div class="product-item">
-            <img src="study-planner.jpg" alt="Study Planner">
-            <h3>Study Planner</h3>
-            <p>Stay organized with a simple, effective digital planner.</p>
-            <button class="cta-btn">Buy Now</button>
+  <!-- Categories Section -->
+  <section class="py-16 container mx-auto px-6">
+    <h3 class="text-3xl font-bold text-center mb-12">Explore Our Categories</h3>
+    <div class="grid md:grid-cols-3 gap-10">
+      
+      <!-- Financial Thinking -->
+      <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition">
+        <img src="https://images.unsplash.com/photo-1567427018141-0584cfcbf1f3?auto=format&fit=crop&w=800&q=60" alt="Financial Thinking" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h4 class="text-xl font-semibold mb-2">Financial Thinking</h4>
+          <p class="text-gray-600 mb-4">Learn how to manage money, invest wisely, and make smart financial decisions for a secure future.</p>
+          <a href="#financial" class="text-indigo-600 font-semibold hover:underline">Read More →</a>
         </div>
-        <div class="product-item">
-            <img src="productivity-course.jpg" alt="Productivity Course">
-            <h3>Productivity Course</h3>
-            <p>Learn the techniques that top students use to manage their time and stay focused.</p>
-            <button class="cta-btn">Enroll Now</button>
-        </div>
-        <div class="product-item">
-            <img src="study-guide.jpg" alt="Study Guide">
-            <h3>Study Guide</h3>
-            <p>Download this step-by-step guide to acing your exams.</p>
-            <button class="cta-btn">Get the Guide</button>
-        </div>
-    </div>
-</section>
+      </div>
 
-<!-- Blog Section -->
-<section id="blog">
-    <h2>Latest Blog Posts</h2>
-    <div class="blog-posts">
-        <div class="blog-post">
-            <h3>How to Stop Procrastinating Before Exams</h3>
-            <p>Learn strategies to overcome procrastination and get your work done on time.</p>
-            <a href="#">Read More</a>
+      <!-- Diet Planning -->
+      <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition">
+        <img src="https://images.unsplash.com/photo-1556911263-29112d9121e0?auto=format&fit=crop&w=800&q=60" alt="Diet Planning" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h4 class="text-xl font-semibold mb-2">Diet Planning</h4>
+          <p class="text-gray-600 mb-4">Discover meal plans, nutritional tips, and strategies to maintain a healthy lifestyle with ease.</p>
+          <a href="#diet" class="text-indigo-600 font-semibold hover:underline">Read More →</a>
         </div>
-        <div class="blog-post">
-            <h3>5 Time Management Tips for Busy Students</h3>
-            <p>Learn how to balance schoolwork, extracurriculars, and life with these simple tips.</p>
-            <a href="#">Read More</a>
+      </div>
+
+      <!-- Good Thoughts -->
+      <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition">
+        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=60" alt="Good Thoughts" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h4 class="text-xl font-semibold mb-2">Good Thoughts</h4>
+          <p class="text-gray-600 mb-4">Read inspiring articles, mindfulness exercises, and reflections to improve mental clarity and positivity.</p>
+          <a href="#thoughts" class="text-indigo-600 font-semibold hover:underline">Read More →</a>
         </div>
-    </div>
-</section>
+      </div>
 
-<!-- Free Resources Section -->
-<section id="free-resources">
-    <h2>Free Resources</h2>
-    <p>Download your free study planner and start organizing your school day like a pro!</p>
-    <button class="cta-btn">Download Now</button>
-</section>
+    </div>
+  </section>
 
-<!-- Testimonials Section -->
-<section id="testimonials">
-    <h2>What Students Are Saying</h2>
-    <div class="testimonial">
-        <p>"This planner helped me stay on track for my finals. I felt more organized and less stressed!"</p>
-        <p>- Jane, High School Senior</p>
-    </div>
-    <div class="testimonial">
-        <p>"The productivity course was a game-changer! It taught me how to manage my time better and actually get things done."</p>
-        <p>- Alex, High School Junior</p>
-    </div>
-</section>
+  <!-- Featured Blog Section -->
+  <section class="bg-gray-100 py-16">
+    <div class="container mx-auto px-6">
+      <h3 class="text-3xl font-bold mb-8 text-center">Featured Articles</h3>
+      <div class="grid md:grid-cols-3 gap-8">
+        
+        <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition">
+          <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&q=60" alt="Article" class="w-full h-40 object-cover">
+          <div class="p-4">
+            <h5 class="font-semibold text-lg mb-2">5 Steps to Financial Freedom</h5>
+            <p class="text-gray-600 mb-2 text-sm">Practical strategies to save, invest, and grow your wealth over time.</p>
+            <a href="#" class="text-indigo-600 font-semibold hover:underline text-sm">Read More →</a>
+          </div>
+        </div>
 
-<!-- Footer -->
-<footer>
-    <div class="footer-links">
-        <a href="#about">About</a> | <a href="#privacy">Privacy Policy</a> | <a href="#terms">Terms of Service</a>
+        <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition">
+          <img src="https://images.unsplash.com/photo-1588776814546-1b85b2b7ff97?auto=format&fit=crop&w=800&q=60" alt="Article" class="w-full h-40 object-cover">
+          <div class="p-4">
+            <h5 class="font-semibold text-lg mb-2">Healthy Meal Prep for Busy Lives</h5>
+            <p class="text-gray-600 mb-2 text-sm">Simple, balanced recipes to keep your energy high throughout the week.</p>
+            <a href="#" class="text-indigo-600 font-semibold hover:underline text-sm">Read More →</a>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition">
+          <img src="https://images.unsplash.com/photo-1518459031867-a89b944bffe4?auto=format&fit=crop&w=800&q=60" alt="Article" class="w-full h-40 object-cover">
+          <div class="p-4">
+            <h5 class="font-semibold text-lg mb-2">Mindful Thinking Daily</h5>
+            <p class="text-gray-600 mb-2 text-sm">Practical ways to maintain positivity and mental clarity every day.</p>
+            <a href="#" class="text-indigo-600 font-semibold hover:underline text-sm">Read More →</a>
+          </div>
+        </div>
+
+      </div>
     </div>
-    <div class="social-media">
-        <a href="#">Instagram</a> | <a href="#">Facebook</a> | <a href="#">Pinterest</a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-white shadow-inner mt-16">
+    <div class="container mx-auto px-6 py-8 text-center text-gray-600">
+      <p>&copy; 2026 GetHub Desktop. All rights reserved.</p>
+      <div class="mt-4 space-x-4">
+        <a href="#" class="hover:text-indigo-600 transition">Privacy Policy</a>
+        <a href="#" class="hover:text-indigo-600 transition">Terms of Service</a>
+      </div>
     </div>
-    <p>&copy; 2026 Your Brand. All Rights Reserved.</p>
-</footer>
+  </footer>
 
 </body>
 </html>
