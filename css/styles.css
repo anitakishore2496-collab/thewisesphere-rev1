@@ -8,7 +8,7 @@ body {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1100px;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -76,62 +76,50 @@ header nav a:hover {
   background-color: #f3f3f3;
 }
 
-/* Categories & Featured Section */
-.categories h3,
-.featured h3 {
+/* Blog Section */
+.blog-section h3 {
   text-align: center;
   font-size: 32px;
   margin-bottom: 40px;
 }
 
-.cards {
+.posts {
   display: grid;
   grid-template-columns: 1fr;
   gap: 30px;
 }
 
-.card {
+.post-card {
   background-color: #fff;
   border-radius: 12px;
-  overflow: hidden;
+  padding: 20px;
   box-shadow: 0 2px 12px rgba(0,0,0,0.05);
   transition: box-shadow 0.3s;
 }
 
-.card:hover {
+.post-card:hover {
   box-shadow: 0 6px 20px rgba(0,0,0,0.1);
 }
 
-.card img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-}
-
-.card-content {
-  padding: 20px;
-}
-
-.card-content h4,
-.card-content h5 {
+.post-card h4 {
   font-size: 20px;
   margin-bottom: 10px;
 }
 
-.card-content p {
+.post-card p {
   color: #555;
   font-size: 14px;
   margin-bottom: 10px;
 }
 
-.card-link {
+.post-link {
   color: #4F46E5;
   font-weight: 600;
   text-decoration: none;
-  transition: color 0.3s;
+  transition: text-decoration 0.3s;
 }
 
-.card-link:hover {
+.post-link:hover {
   text-decoration: underline;
 }
 
@@ -160,7 +148,7 @@ footer {
 
 /* Responsive */
 @media (min-width: 768px) {
-  .cards {
+  .posts {
     grid-template-columns: repeat(3, 1fr);
   }
 }
