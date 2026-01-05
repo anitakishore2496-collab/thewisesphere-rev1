@@ -4,121 +4,109 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>GetHub Desktop - Blog</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <style>
-    body { font-family: 'Inter', sans-serif; }
-  </style>
 </head>
-<body class="bg-gray-50 text-gray-800">
+<body>
 
   <!-- Header / Navigation -->
-  <header class="bg-white shadow-md">
-    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-      <h1 class="text-2xl font-bold text-indigo-600">GetHub Desktop</h1>
-      <nav class="space-x-6 text-gray-700 font-medium">
-        <a href="#" class="hover:text-indigo-600 transition">Home</a>
-        <a href="#financial" class="hover:text-indigo-600 transition">Financial Thinking</a>
-        <a href="#diet" class="hover:text-indigo-600 transition">Diet Planning</a>
-        <a href="#thoughts" class="hover:text-indigo-600 transition">Good Thoughts</a>
-        <a href="#contact" class="hover:text-indigo-600 transition">Contact</a>
+  <header>
+    <div class="container header-container">
+      <h1 class="logo">GetHub Desktop</h1>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#financial">Financial Thinking</a>
+        <a href="#diet">Diet Planning</a>
+        <a href="#thoughts">Good Thoughts</a>
+        <a href="#contact">Contact</a>
       </nav>
     </div>
   </header>
 
   <!-- Hero Section -->
-  <section class="bg-indigo-600 text-white py-24">
-    <div class="container mx-auto px-6 text-center">
-      <h2 class="text-4xl md:text-5xl font-bold mb-4">Inspire, Learn & Grow</h2>
-      <p class="text-lg md:text-xl mb-8">Explore insights on financial wisdom, healthy living, and mindful thinking.</p>
-      <a href="#financial" class="bg-white text-indigo-600 px-6 py-3 rounded-full font-semibold shadow hover:bg-gray-100 transition">Start Reading</a>
+  <section class="hero">
+    <div class="container hero-content">
+      <h2>Inspire, Learn & Grow</h2>
+      <p>Explore insights on financial wisdom, healthy living, and mindful thinking.</p>
+      <a href="#financial" class="btn-primary">Start Reading</a>
     </div>
   </section>
 
   <!-- Categories Section -->
-  <section class="py-16 container mx-auto px-6">
-    <h3 class="text-3xl font-bold text-center mb-12">Explore Our Categories</h3>
-    <div class="grid md:grid-cols-3 gap-10">
-      
-      <!-- Financial Thinking -->
-      <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition">
-        <img src="https://images.unsplash.com/photo-1567427018141-0584cfcbf1f3?auto=format&fit=crop&w=800&q=60" alt="Financial Thinking" class="w-full h-48 object-cover">
-        <div class="p-6">
-          <h4 class="text-xl font-semibold mb-2">Financial Thinking</h4>
-          <p class="text-gray-600 mb-4">Learn how to manage money, invest wisely, and make smart financial decisions for a secure future.</p>
-          <a href="#financial" class="text-indigo-600 font-semibold hover:underline">Read More →</a>
+  <section class="categories container">
+    <h3>Explore Our Categories</h3>
+    <div class="cards">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1567427018141-0584cfcbf1f3?auto=format&fit=crop&w=800&q=60" alt="Financial Thinking">
+        <div class="card-content">
+          <h4>Financial Thinking</h4>
+          <p>Learn how to manage money, invest wisely, and make smart financial decisions for a secure future.</p>
+          <a href="#financial" class="card-link">Read More →</a>
         </div>
       </div>
 
-      <!-- Diet Planning -->
-      <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition">
-        <img src="https://images.unsplash.com/photo-1556911263-29112d9121e0?auto=format&fit=crop&w=800&q=60" alt="Diet Planning" class="w-full h-48 object-cover">
-        <div class="p-6">
-          <h4 class="text-xl font-semibold mb-2">Diet Planning</h4>
-          <p class="text-gray-600 mb-4">Discover meal plans, nutritional tips, and strategies to maintain a healthy lifestyle with ease.</p>
-          <a href="#diet" class="text-indigo-600 font-semibold hover:underline">Read More →</a>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1556911263-29112d9121e0?auto=format&fit=crop&w=800&q=60" alt="Diet Planning">
+        <div class="card-content">
+          <h4>Diet Planning</h4>
+          <p>Discover meal plans, nutritional tips, and strategies to maintain a healthy lifestyle with ease.</p>
+          <a href="#diet" class="card-link">Read More →</a>
         </div>
       </div>
 
-      <!-- Good Thoughts -->
-      <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition">
-        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=60" alt="Good Thoughts" class="w-full h-48 object-cover">
-        <div class="p-6">
-          <h4 class="text-xl font-semibold mb-2">Good Thoughts</h4>
-          <p class="text-gray-600 mb-4">Read inspiring articles, mindfulness exercises, and reflections to improve mental clarity and positivity.</p>
-          <a href="#thoughts" class="text-indigo-600 font-semibold hover:underline">Read More →</a>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=60" alt="Good Thoughts">
+        <div class="card-content">
+          <h4>Good Thoughts</h4>
+          <p>Read inspiring articles, mindfulness exercises, and reflections to improve mental clarity and positivity.</p>
+          <a href="#thoughts" class="card-link">Read More →</a>
         </div>
       </div>
-
     </div>
   </section>
 
   <!-- Featured Blog Section -->
-  <section class="bg-gray-100 py-16">
-    <div class="container mx-auto px-6">
-      <h3 class="text-3xl font-bold mb-8 text-center">Featured Articles</h3>
-      <div class="grid md:grid-cols-3 gap-8">
-        
-        <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition">
-          <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&q=60" alt="Article" class="w-full h-40 object-cover">
-          <div class="p-4">
-            <h5 class="font-semibold text-lg mb-2">5 Steps to Financial Freedom</h5>
-            <p class="text-gray-600 mb-2 text-sm">Practical strategies to save, invest, and grow your wealth over time.</p>
-            <a href="#" class="text-indigo-600 font-semibold hover:underline text-sm">Read More →</a>
-          </div>
+  <section class="featured container">
+    <h3>Featured Articles</h3>
+    <div class="cards">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&q=60" alt="Article">
+        <div class="card-content">
+          <h5>5 Steps to Financial Freedom</h5>
+          <p>Practical strategies to save, invest, and grow your wealth over time.</p>
+          <a href="#" class="card-link">Read More →</a>
         </div>
+      </div>
 
-        <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition">
-          <img src="https://images.unsplash.com/photo-1588776814546-1b85b2b7ff97?auto=format&fit=crop&w=800&q=60" alt="Article" class="w-full h-40 object-cover">
-          <div class="p-4">
-            <h5 class="font-semibold text-lg mb-2">Healthy Meal Prep for Busy Lives</h5>
-            <p class="text-gray-600 mb-2 text-sm">Simple, balanced recipes to keep your energy high throughout the week.</p>
-            <a href="#" class="text-indigo-600 font-semibold hover:underline text-sm">Read More →</a>
-          </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1588776814546-1b85b2b7ff97?auto=format&fit=crop&w=800&q=60" alt="Article">
+        <div class="card-content">
+          <h5>Healthy Meal Prep for Busy Lives</h5>
+          <p>Simple, balanced recipes to keep your energy high throughout the week.</p>
+          <a href="#" class="card-link">Read More →</a>
         </div>
+      </div>
 
-        <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition">
-          <img src="https://images.unsplash.com/photo-1518459031867-a89b944bffe4?auto=format&fit=crop&w=800&q=60" alt="Article" class="w-full h-40 object-cover">
-          <div class="p-4">
-            <h5 class="font-semibold text-lg mb-2">Mindful Thinking Daily</h5>
-            <p class="text-gray-600 mb-2 text-sm">Practical ways to maintain positivity and mental clarity every day.</p>
-            <a href="#" class="text-indigo-600 font-semibold hover:underline text-sm">Read More →</a>
-          </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1518459031867-a89b944bffe4?auto=format&fit=crop&w=800&q=60" alt="Article">
+        <div class="card-content">
+          <h5>Mindful Thinking Daily</h5>
+          <p>Practical ways to maintain positivity and mental clarity every day.</p>
+          <a href="#" class="card-link">Read More →</a>
         </div>
-
       </div>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="bg-white shadow-inner mt-16">
-    <div class="container mx-auto px-6 py-8 text-center text-gray-600">
+  <footer>
+    <div class="container footer-container">
       <p>&copy; 2026 GetHub Desktop. All rights reserved.</p>
-      <div class="mt-4 space-x-4">
-        <a href="#" class="hover:text-indigo-600 transition">Privacy Policy</a>
-        <a href="#" class="hover:text-indigo-600 transition">Terms of Service</a>
+      <div class="footer-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
       </div>
     </div>
   </footer>
