@@ -1,0 +1,161 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    background: #4CAF50;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header .logo h1 {
+    font-size: 2.5em;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 20px 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+header .cta-btn {
+    background: #ffffff;
+    color: #4CAF50;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+header .cta-btn:hover {
+    background: #45a049;
+}
+
+#hero {
+    background: #333;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#hero h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+#hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+#hero .cta-btn {
+    background-color: #ff9800;
+}
+
+#main-content {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 20px;
+}
+
+.product-grid {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.product-item {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
+    width: 30%;
+}
+
+.product-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.product-item h3 {
+    margin-top: 10px;
+}
+
+#blog {
+    background: #f9f9f9;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.blog-posts {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.blog-post {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    width: 30%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+#free-resources {
+    background: #ffffff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#testimonials {
+    background: #f4f4f4;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.testimonial {
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+footer {
+    background: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
